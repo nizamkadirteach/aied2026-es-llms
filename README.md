@@ -22,7 +22,8 @@ These Python files demonstrate the "brain" of the tutor—the condition-action r
 * **`HUMAN_EVALUATION_RUBRICS.md`**: The comprehensive 7-dimension evaluation rubric (Likert 1-5 scale) utilized by our expert panel of educators to benchmark the system's pedagogical performance.
 
 ### 3. Data Collection Transparency (`/examples`)
-* **`Consolidated_Master_Output.csv`**: An unedited raw sample dataset exported directly from our automated Monte Carlo simulations to demonstrate our data collection and logging pipeline.
+* **`Consolidated_Master_Output.csv`**: An anonymized raw data export containing the 5-point Likert scores and justifications from our expert human panel evaluation across the 24 paired mathematical scenarios.
+* **`sim_N2400_final_v2.csv`**: An unedited raw sample dataset exported directly from our high-throughput automated Monte Carlo simulations (N=2,400 runs), demonstrating our specific constraint adherence and mastery gain logging pipeline constraint by constraint.
 
 ---
 *(Note: For confidentiality and security, proprietary database schema, explicit system prompt templates, comprehensive domain expert knowledge bases, and API endpoints have been intentionally omitted. This repository serves specifically to satisfy methodological transparency regarding the symbolic rule arbitration and evaluation rubrics).*
