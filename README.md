@@ -14,6 +14,8 @@ To guarantee procedural fairness and pedagogical safety, ES-LLMs strictly decoup
 * **`agents/ethics_bot.py`**: Computes and enforces non-negotiable safety rules (e.g., attempt-before-hint, maximum hint caps) to prevent system gaming.
 * **`agents/scaffold_bot.py`**: Calculates scaffolding depth strictly based on consecutive errors to prevent over-helping and maintain the zone of proximal development.
 * **`agents/assessment_bot.py`**: Implements the Bayesian Knowledge Tracing (BKT) mechanics to actively update learner mastery ($pL$) upon answer attempts.
+* **`evaluation/`**: Contains the comprehensive 7-dimension Human Evaluation Rubrics (Likert 1-5) utilized by our expert panel to benchmark the system's pedagogical performance.
+* **`examples/`**: Contains an unedited raw sample dataset (`Consolidated_Master_Output.csv`) exported directly from our automated simulations to demonstrate data collection transparency.
 
 ---
 *(Note: For confidentiality and security, proprietary database models, explicit prompt templates, domain expert knowledge bases, complete affective inference models, and API endpoints have been omitted. This repository serves specifically to satisfy methodological transparency regarding the symbolic rule arbitration.)*
