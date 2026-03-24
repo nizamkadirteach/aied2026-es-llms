@@ -27,3 +27,23 @@ These Python files demonstrate the "brain" of the tutor—the condition-action r
 
 ---
 *(Note: For confidentiality and security, proprietary database schema, explicit system prompt templates, comprehensive domain expert knowledge bases, and API endpoints have been intentionally omitted. This repository serves specifically to satisfy methodological transparency regarding the symbolic rule arbitration and evaluation rubrics).*
+
+## 👥 Authors & Citation
+
+**Mohammad Nizam**  
+*[Insert Your University / Affiliation Here]*  
+Email: mohammadnizam1979@gmail.com | [ORCID: Insert Your 16-digit ORCID](https://orcid.org/) 
+
+*(Note: Don't forget to update the placeholder Affiliation and ORCID above!)*
+
+If you build upon this architecture or utilize the pedagogical ruleset in your research, please cite our AIED 2026 paper:
+
+```bibtex
+@inproceedings{esllms2026,
+  title={From Untamed Black Box to Interpretable Pedagogical Orchestration: The Ensemble of Specialized LLMs Architecture for Adaptive Tutoring},
+  author={Nizam, Mohammad and others...},
+  booktitle={Proceedings of the 27th International Conference on Artificial Intelligence in Education (AIED 2026)},
+  year={2026},
+  publisher={Springer}
+}
+```
