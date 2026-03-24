@@ -30,18 +30,18 @@ These Python files demonstrate the "brain" of the tutor—the condition-action r
 
 ## 👥 Authors & Citation
 
-**Mohammad Nizam**  
-*[Insert Your University / Affiliation Here]*  
-Email: mohammadnizam1979@gmail.com | [ORCID: Insert Your 16-digit ORCID](https://orcid.org/) 
+* **Nizam Kadir** [[ORCID: 0000-0002-6725-1133]](https://orcid.org/0000-0002-6725-1133) (Corresponding Author: `nizam_kadir@mymail.sutd.edu.sg`)
+* **Nachamma Sockalingam** [[ORCID: 0000-0002-9477-428X]](https://orcid.org/0000-0002-9477-428X)
+* **Dorien Herremans** [[ORCID: 0000-0001-8607-1640]](https://orcid.org/0000-0001-8607-1640)
 
-*(Note: Don't forget to update the placeholder Affiliation and ORCID above!)*
+*Singapore University of Technology and Design, Singapore 487372, Singapore*
 
 If you build upon this architecture or utilize the pedagogical ruleset in your research, please cite our AIED 2026 paper:
 
 ```bibtex
 @inproceedings{esllms2026,
   title={From Untamed Black Box to Interpretable Pedagogical Orchestration: The Ensemble of Specialized LLMs Architecture for Adaptive Tutoring},
-  author={Nizam, Mohammad and others...},
+  author={Kadir, Nizam and Sockalingam, Nachamma and Herremans, Dorien},
   booktitle={Proceedings of the 27th International Conference on Artificial Intelligence in Education (AIED 2026)},
   year={2026},
   publisher={Springer}
