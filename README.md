@@ -28,20 +28,18 @@ These Python files demonstrate the "brain" of the tutor—the condition-action r
 ---
 *(Note: For confidentiality and security, proprietary database schema, explicit system prompt templates, comprehensive domain expert knowledge bases, and API endpoints have been intentionally omitted. This repository serves specifically to satisfy methodological transparency regarding the symbolic rule arbitration and evaluation rubrics).*
 
-## 👥 Authors & Citation
+## 👥 Author & Citation
 
 * **Nizam Kadir** [[ORCID: 0000-0002-6725-1133]](https://orcid.org/0000-0002-6725-1133) (Corresponding Author: `nizam_kadir@mymail.sutd.edu.sg`)
-* **Nachamma Sockalingam** [[ORCID: 0000-0002-9477-428X]](https://orcid.org/0000-0002-9477-428X)
-* **Dorien Herremans** [[ORCID: 0000-0001-8607-1640]](https://orcid.org/0000-0001-8607-1640)
 
 *Singapore University of Technology and Design, Singapore 487372, Singapore*
 
-If you build upon this architecture or utilize the pedagogical ruleset in your research, please cite our AIED 2026 paper / arXiv preprint ([DOI: 10.48550/arXiv.2603.23990](https://doi.org/10.48550/arXiv.2603.23990)):
+If you build upon this architecture or utilize the pedagogical ruleset in your research, please cite my AIED 2026 paper / arXiv preprint ([DOI: 10.48550/arXiv.2603.23990](https://doi.org/10.48550/arXiv.2603.23990)):
 
 ```bibtex
 @misc{kadir2026untamedblackboxinterpretable,
       title={From Untamed Black Box to Interpretable Pedagogical Orchestration: The Ensemble of Specialized LLMs Architecture for Adaptive Tutoring}, 
-      author={Kadir, Nizam and Sockalingam, Nachamma and Herremans, Dorien},
+      author={Kadir, Nizam},
       year={2026},
       eprint={2603.23990},
       archivePrefix={arXiv},
