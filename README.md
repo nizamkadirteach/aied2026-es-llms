@@ -39,11 +39,13 @@ These Python files demonstrate the "brain" of the tutor—the condition-action r
 If you build upon this architecture or utilize the pedagogical ruleset in your research, please cite our AIED 2026 paper:
 
 ```bibtex
-@inproceedings{esllms2026,
-  title={From Untamed Black Box to Interpretable Pedagogical Orchestration: The Ensemble of Specialized LLMs Architecture for Adaptive Tutoring},
-  author={Kadir, Nizam and Sockalingam, Nachamma and Herremans, Dorien},
-  booktitle={Proceedings of the 27th International Conference on Artificial Intelligence in Education (AIED 2026)},
-  year={2026},
-  publisher={Springer}
+@misc{kadir2026untamedblackboxinterpretable,
+      title={From Untamed Black Box to Interpretable Pedagogical Orchestration: The Ensemble of Specialized LLMs Architecture for Adaptive Tutoring}, 
+      author={Kadir, Nizam and Sockalingam, Nachamma and Herremans, Dorien},
+      year={2026},
+      eprint={2603.23990},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2603.23990}, 
 }
 ```
