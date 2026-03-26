@@ -36,7 +36,7 @@ These Python files demonstrate the "brain" of the tutor—the condition-action r
 
 *Singapore University of Technology and Design, Singapore 487372, Singapore*
 
-If you build upon this architecture or utilize the pedagogical ruleset in your research, please cite our AIED 2026 paper:
+If you build upon this architecture or utilize the pedagogical ruleset in your research, please cite our AIED 2026 paper / arXiv preprint ([DOI: 10.48550/arXiv.2603.23990](https://doi.org/10.48550/arXiv.2603.23990)):
 
 ```bibtex
 @misc{kadir2026untamedblackboxinterpretable,
@@ -47,5 +47,6 @@ If you build upon this architecture or utilize the pedagogical ruleset in your r
       archivePrefix={arXiv},
       primaryClass={cs.CY},
       url={https://arxiv.org/abs/2603.23990}, 
+      doi={10.48550/arXiv.2603.23990}
 }
 ```
