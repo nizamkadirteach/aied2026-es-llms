@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Kadir"
+  given-names: "Nizam"
+  orcid: "https://orcid.org/0000-0002-6725-1133"
+title: "AIED 2026 - ES-LLMs Pedagogical Orchestration Toolkit"
+version: 1.0.0
+date-released: 2026-03-30
+url: "https://github.com/nizamkadirteach/aied2026-es-llms"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Kadir"
+    given-names: "Nizam"
+  title: "From Untamed Black Box to Interpretable Pedagogical Orchestration: The Ensemble of Specialized LLMs Architecture for Adaptive Tutoring"
+  year: 2026
+  journal: "arXiv preprint"
+  doi: "10.48550/arXiv.2603.23990"

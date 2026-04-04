@@ -1,32 +1,31 @@
-# Ensemble of Specialized LLMs (ES-LLMs)
+# From Untamed Black Box to Interpretable Pedagogical Orchestration 
 
-**Official Reproducibility Repository for the AIED 2026 Paper:**
-*"From Untamed Black Box to Interpretable Pedagogical Orchestration: The Ensemble of Specialized LLMs Architecture for Adaptive Tutoring"*
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nizamkadirteach/aied2026-es-llms/blob/main/demo.ipynb)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Purpose of this Repository
-This repository is designed to provide methodological transparency for learning sciences researchers and reviewers. 
+**Official Open-Source Toolkit & Reproducibility Repository for the AIED 2026 Paper (ES-LLMs)**
 
-To guarantee procedural fairness and pedagogical safety, our ES-LLMs architecture strictly decouples pedagogical decision-making from standard large language model text generation. Instead of relying on stochastic prompt engineering, the tutor's behavior is driven by deterministic, interpretable rules and cognitive models (such as Bayesian Knowledge Tracing). This repository exposes that exact underlying logic.
-
-## 🗂️ What's Included?
-
-### 1. The Core Pedagogical Logic (`/agents` & `/policy`)
-These Python files demonstrate the "brain" of the tutor—the condition-action rules and priority hierarchies that dictate *when* and *how* the system intervenes.
-* **`agents/orchestrator.py`**: The Meta-Orchestrator that evaluates learner state and arbitrates our strict priority hierarchy (`Ethics > Assessment > Feedback > Scaffolding > Motivation`).
-* **`agents/assessment_bot.py`**: The mathematical implementation of our Bayesian Knowledge Tracing (BKT) mechanics used to dynamically track learner mastery ($pL$).
-* **`agents/scaffold_bot.py`**: The logic that computes exact scaffolding depth strictly based on consecutive student errors to prevent over-helping and maintain the Zone of Proximal Development.
-* **`agents/ethics_bot.py`**: The safety constraint definitions (e.g., enforcing the "attempt-before-hint" rule to prevent system gaming).
-* **`policy/pedagogical_policy.py`**: The explicit condition-action mappings defining the active pedagogical policy sequence.
-
-### 2. Human Evaluation Transparency (`/evaluation`)
-* **`HUMAN_EVALUATION_RUBRICS.md`**: The comprehensive 7-dimension evaluation rubric (Likert 1-5 scale) utilized by our expert panel of educators to benchmark the system's pedagogical performance.
-
-### 3. Data Collection Transparency (`/examples`)
-* **`Consolidated_Master_Output.csv`**: An anonymized raw data export containing the 5-point Likert scores and justifications from our expert human panel evaluation across the 24 paired mathematical scenarios.
-* **`sim_N2400_final_v2.csv`**: An unedited raw sample dataset exported directly from our high-throughput automated Monte Carlo simulations (N=2,400 runs), demonstrating our specific constraint adherence and mastery gain logging pipeline constraint by constraint.
+This repository provides an extensible research toolkit outlining the **Ensemble of Specialized LLMs (ES-LLMs)** architecture. By decoupling deterministic pedagogical decision-making from natural language generation, ES-LLMs enforces strict "attempt-before-hint" rules, solving the Mastery Gain Paradox common to monolithic AI tutors.
 
 ---
-*(Note: For confidentiality and security, proprietary database schema, explicit system prompt templates, comprehensive domain expert knowledge bases, and API endpoints have been intentionally omitted. This repository serves specifically to satisfy methodological transparency regarding the symbolic rule arbitration and evaluation rubrics).*
+
+## 🛠️ The Research Toolkit
+
+This repository is designed to help learning science researchers evaluate, simulate, and benchmark LLM-based intelligent tutoring systems.
+
+1. **`/benchmark`**: 
+   - Contains the **ES-LLMs Pedagogical Safety Benchmark**, an expert-curated 24-scenario JSON dataset testing for edge cases like "Hint Abuse" and "Off-topic distraction." Use this to evaluate if your novel LLM tutor is easily gamed by students.
+2. **`/simulator`**: 
+   - A Monte Carlo simulation environment (`synthetic_students.py` and `simulation_loop.py`). We provide the precise probabilistic parameters for 4 empirical student archetypes (Struggling, Low, Average, High) derived from BKT equations on the ASSISTments dataset. Run massive N=2,400 stochastic sessions locally.
+3. **`/evaluator`**: 
+   - The strict **Multi-LLM Evaluator**. Use `eval_rubric_prompts.json` and `llm_judge_panel.py` to leverage 6 frontier models (Gemini, Qwen, Kimi, etc.) to automatically grade your own dialogue logs on our 7-dimensional pedagogy rubric.
+4. **`/metrics`**: 
+   - `metrics.py` calculates novel conceptual metrics from our paper, notably **Hint Efficiency** ($\text{Mastery Gain} / \text{Hints Received}$) and **Procedural Fairness** (Constraint Adherence).
+5. **`/agents`**:
+   - The core Subsumption Architecture logic. Review `orchestrator.py` to see the hierarchical arbitration engine (Safety > Assessment > Feedback > Scaffolding > Motivation) and `stateless_renderer.py` for the final single-prompt linguistic generation step.
+
+## 🚀 Quick Start (Google Colab)
+Want to instantly see how the Subsumption Architecture suppresses harmful AI generations? Click the **Open in Colab** badge at the top of this file to run a minimal, executable demonstration of our EthicsBot overriding a premature hint request directly in your browser.
 
 ## 👥 Author & Citation
 
@@ -34,7 +33,7 @@ These Python files demonstrate the "brain" of the tutor—the condition-action r
 
 *Singapore University of Technology and Design, Singapore 487372, Singapore*
 
-If you build upon this architecture or utilize the pedagogical ruleset in your research, please cite my AIED 2026 paper / arXiv preprint ([DOI: 10.48550/arXiv.2603.23990](https://doi.org/10.48550/arXiv.2603.23990)):
+If you build upon this architecture or utilize the pedagogical ruleset in your research, please click 'Cite this repository' on the right sidebar, or use the AIED 2026 preprint citation below:
 
 ```bibtex
 @misc{kadir2026untamedblackboxinterpretable,
@@ -48,3 +47,6 @@ If you build upon this architecture or utilize the pedagogical ruleset in your r
       doi={10.48550/arXiv.2603.23990}
 }
 ```
+
+## ⚖️ License
+This repository is released under the permissive [MIT License](LICENSE), explicitly allowing educational/EdTech startup and academic R&D integration.

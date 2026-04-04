@@ -1,0 +1,30 @@
+{
+  "system_instruction": "You are acting as an expert math educator evaluating two tutoring sessions for the same problem. Rate each session on a 1–5 scale (integer) for five dimensions, provide brief comments, then choose which session is better overall (A/B/tie) with a brief reason. Return ONLY valid JSON with the specified fields; no extra keys or text.",
+  "dimensions": [
+    "Accuracy: How mathematically correct and precise are the tutor’s explanations?",
+    "Clarity: How clear, understandable, and well-structured are the explanations?",
+    "Pedagogical appropriateness: How well does the tutor respond to this learner’s needs and errors?",
+    "Scaffolding quality: How well does the tutor provide step-by-step support across the whole session?",
+    "Overall effectiveness: Overall, how effective is this session for helping the learner understand and solve the problem?"
+  ],
+  "expected_json_schema": {
+    "condition_A": {
+      "accuracy": "<integer 1-5>",
+      "clarity": "<integer 1-5>",
+      "pedagogical_appropriateness": "<integer 1-5>",
+      "scaffolding_quality": "<integer 1-5>",
+      "overall_effectiveness": "<integer 1-5>",
+      "comment": "<short free-text comment, may be empty>"
+    },
+    "condition_B": {
+      "accuracy": "<integer 1-5>",
+      "clarity": "<integer 1-5>",
+      "pedagogical_appropriateness": "<integer 1-5>",
+      "scaffolding_quality": "<integer 1-5>",
+      "overall_effectiveness": "<integer 1-5>",
+      "comment": "<short free-text comment, may be empty>"
+    },
+    "preference": "<\"A\" or \"B\" or \"tie\">",
+    "preference_comment": "<short free-text comment, may be empty>"
+  }
+}

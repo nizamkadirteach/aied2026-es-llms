@@ -1,0 +1,170 @@
+[
+  {
+    "item_id": "item_001",
+    "skill_id": "integers",
+    "cluster": "Mastery / Easy",
+    "pattern": "Clean Correct",
+    "problem_id": "429"
+  },
+  {
+    "item_id": "item_002",
+    "skill_id": "integers",
+    "cluster": "Mastery / Easy",
+    "pattern": "Scaffolded Success",
+    "problem_id": "429"
+  },
+  {
+    "item_id": "item_003",
+    "skill_id": "integers",
+    "cluster": "Mastery / Easy",
+    "pattern": "Trial and Error",
+    "problem_id": "429"
+  },
+  {
+    "item_id": "item_004",
+    "skill_id": "integers",
+    "cluster": "Mastery / Easy",
+    "pattern": "Immediate Wrong",
+    "problem_id": "429"
+  },
+  {
+    "item_id": "item_005",
+    "skill_id": "integers",
+    "cluster": "Mastery / Easy",
+    "pattern": "Hint Reliance",
+    "problem_id": "12315"
+  },
+  {
+    "item_id": "item_006",
+    "skill_id": "integers",
+    "cluster": "Mastery / Easy",
+    "pattern": "Deep Struggle",
+    "problem_id": "429"
+  },
+  {
+    "item_id": "item_007",
+    "skill_id": "integers",
+    "cluster": "Mastery / Easy",
+    "pattern": "Hint Abuse",
+    "problem_id": "12315"
+  },
+  {
+    "item_id": "item_008",
+    "skill_id": "integers",
+    "cluster": "Mastery / Easy",
+    "pattern": "System Gaming",
+    "problem_id": "12315"
+  },
+  {
+    "item_id": "item_009",
+    "skill_id": "median",
+    "cluster": "Moderate Difficulty",
+    "pattern": "Clean Correct",
+    "problem_id": "900"
+  },
+  {
+    "item_id": "item_010",
+    "skill_id": "median",
+    "cluster": "Moderate Difficulty",
+    "pattern": "Scaffolded Success",
+    "problem_id": "853"
+  },
+  {
+    "item_id": "item_011",
+    "skill_id": "median",
+    "cluster": "Moderate Difficulty",
+    "pattern": "Trial and Error",
+    "problem_id": "897"
+  },
+  {
+    "item_id": "item_012",
+    "skill_id": "median",
+    "cluster": "Moderate Difficulty",
+    "pattern": "Immediate Wrong",
+    "problem_id": "893"
+  },
+  {
+    "item_id": "item_013",
+    "skill_id": "median",
+    "cluster": "Moderate Difficulty",
+    "pattern": "Hint Reliance",
+    "problem_id": "853"
+  },
+  {
+    "item_id": "item_014",
+    "skill_id": "median",
+    "cluster": "Moderate Difficulty",
+    "pattern": "Deep Struggle",
+    "problem_id": "853"
+  },
+  {
+    "item_id": "item_015",
+    "skill_id": "median",
+    "cluster": "Moderate Difficulty",
+    "pattern": "Hint Abuse",
+    "problem_id": "853"
+  },
+  {
+    "item_id": "item_016",
+    "skill_id": "median",
+    "cluster": "Moderate Difficulty",
+    "pattern": "System Gaming",
+    "problem_id": "853"
+  },
+  {
+    "item_id": "item_017",
+    "skill_id": "pythagorean-theorem",
+    "cluster": "Hard / High Struggle",
+    "pattern": "Clean Correct",
+    "problem_id": "1232"
+  },
+  {
+    "item_id": "item_018",
+    "skill_id": "pythagorean-theorem",
+    "cluster": "Hard / High Struggle",
+    "pattern": "Scaffolded Success",
+    "problem_id": "1178"
+  },
+  {
+    "item_id": "item_019",
+    "skill_id": "pythagorean-theorem",
+    "cluster": "Hard / High Struggle",
+    "pattern": "Trial and Error",
+    "problem_id": "1178"
+  },
+  {
+    "item_id": "item_020",
+    "skill_id": "pythagorean-theorem",
+    "cluster": "Hard / High Struggle",
+    "pattern": "Immediate Wrong",
+    "problem_id": "1178"
+  },
+  {
+    "item_id": "item_021",
+    "skill_id": "pythagorean-theorem",
+    "cluster": "Hard / High Struggle",
+    "pattern": "Hint Reliance",
+    "problem_id": "1180"
+  },
+  {
+    "item_id": "item_022",
+    "skill_id": "pythagorean-theorem",
+    "cluster": "Hard / High Struggle",
+    "pattern": "Deep Struggle",
+    "problem_id": "1180"
+  },
+  {
+    "item_id": "item_023",
+    "skill_id": "pythagorean-theorem",
+    "cluster": "Hard / High Struggle",
+    "pattern": "Hint Abuse",
+    "problem_id": "1180"
+  },
+  {
+    "item_id": "item_024",
+    "skill_id": "pythagorean-theorem",
+    "cluster": "Hard / High Struggle",
+    "pattern": "System Gaming",
+    "problem_id": "1180"
+  }
+]
