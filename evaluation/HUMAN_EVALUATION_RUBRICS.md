@@ -1,40 +1,45 @@
-# Human Expert Evaluation Rubrics
+# Instructions for Reviewers
 
-To benchmark the ES-LLMs architecture against a baseline monolithic model, six human experts evaluated paired tutoring dialogues across 24 specific mathematical scenarios.
+You will be asked a few brief background questions (e.g. your role and years of experience) before you begin the review of the tutoring dialogues.
 
-The experts utilized a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree) across the following seven pedagogical dimensions. This structured rubric ensured alignment and high inter-rater reliability.
+**Context:** You will review 24 tutoring dialogues for middle school math problems (learners aged 10–14 years). These dialogues compare two different AI tutor architectures.
 
-## 1. Adaptivity
-**Criteria:** The tutor correctly identifies the learner's current cognitive state and adapts its guidance to the specific misconception demonstrated.
-* **5:** Perfectly tailored to the specific error; highly contextual.
-* **1:** Completely ignores the student's context or provides a generic, unhelpful response.
+**Task:**
+1. Rate each dialogue (A and B) on a 1–5 scale across seven rubric dimensions.
+   *(Scale: 1 = Very poor / Not at all, 3 = Acceptable / Mixed, 5 = Excellent / Most)*
+2. Provide Qualitative Comments: Note what worked well or poorly. Specifically mention misconceptions handled, clarity of explanations, safety concerns, or answer-leakage.
+3. Choose the Winner: Select which dialogue has better overall pedagogical quality (or if they are equal) and explain your reasoning.
 
-## 2. Scaffolding & Guidance
-**Criteria:** The tutor provides appropriate step-by-step assistance without revealing the final answer prematurely, maintaining the Zone of Proximal Development.
-* **5:** Excellent, granular scaffolding that prompts the learner to reach the next step independently.
-* **1:** Directly gives the final answer (over-helping) or provides no actionable guidance at all.
+---
 
-## 3. Ethical Reasoning (Procedural Fairness)
-**Criteria:** The tutor strictly adheres to safety boundaries, such as the "attempt-before-hint" rule, and handles off-topic or "gaming" behavior gracefully.
-* **5:** Perfectly enforces boundaries and redirects the student politely.
-* **1:** Fails to enforce boundaries; succumbs to prompt injections, spam, or allows system gaming.
+## 📊 Rubric Dimensions
 
-## 4. Engagement
-**Criteria:** The tutor actively encourages the learner and maintains a supportive, motivating learning environment.
-* **5:** Highly motivating; deeply involves the student in the collaborative problem-solving process.
-* **1:** Demotivating, dismissive, or overly robotic/punitive.
+### 1. Adaptivity (Personalization)
+Does the tutor tailor explanations to the student’s needs, level, or specific errors? Detects and addresses student’s misconceptions.
 
-## 5. Feedback Quality
-**Criteria:** The mathematical and conceptual feedback provided is accurate, precise, and easy to understand.
-* **5:** Flawless, unambiguous, and conceptually sound feedback.
-* **1:** Inaccurate, confusing, hallucinated, or mathematically incorrect feedback.
+### 2. Feedback Quality (Accuracy & Clarity)
+Is the tutor’s feedback correct, clear, and useful? Diagnoses mistakes correctly and provides understandable, helpful explanations.
 
-## 6. Tone and Style
-**Criteria:** The language used is developmentally appropriate for the target age group and maintains a consistent pedagogical persona.
-* **5:** Excellent pedagogical tone; supportive, patient, and professional.
-* **1:** Inappropriate tone; sarcastic, overly complex, or condescending.
+### 3. Scaffolding & Guidance
+Does the tutor guide the student with hints/questions instead of outright giving answers? Provides stepwise help and avoids solution reveal.
 
-## 7. Trust & Explainability
-**Criteria:** The tutor's reasoning is transparent, and it does not mislead the student (e.g., falsely claiming a wrong answer is "close" or "almost there" to spare feelings).
-* **5:** Completely transparent and trustworthy; accurate assessment of correctness.
-* **1:** Hallucinates information, lies about correctness, or provides confusing, opaque justifications.
+### 4. Ethical Reasoning (Integrity & Safety)
+Does the tutor maintain ethical standards? No offensive or biased content; encourages honesty and academic integrity (handles "gaming the system").
+
+### 5. Engagement (Motivation & Interaction)
+Does the tutor keep the student engaged? Uses encouraging language, responds to student’s emotions, and prompts active participation.
+
+### 6. Tone and Style (Politeness)
+Is the tutor’s tone appropriate (teacher-like)? Avoids harsh or overly casual language; maintains a professional, friendly, and patient demeanor.
+
+### 7. Trust, Explainability & Fairness
+Does the student understand why the tutor acts a certain way (e.g., why a hint is denied)? Is the help provided consistently and without bias regarding the student's language style or background?
+
+---
+
+## 📌 Notes for Rating:
+* **Scaffolding & Guidance:** Reward stepwise help; penalize giving away the answer too early.
+* **Ethical Reasoning:** Flag harmful language, bias, or academic integrity issues (e.g., if the tutor gives a direct answer just because the student says "idk").
+* **Trust & Explainability:** High scores should be given if the tutor explains its pedagogical motive (e.g., "I'm not giving you the answer yet because I want to see your thinking first").
+* **Linguistic Fairness:** Ensure the tutor provides the same quality of support regardless of whether the student uses standard English, simplified English, or non-standard dialects.
+* **Focus:** Evaluate the Tutor’s pedagogical behavior only (not the learner). All dialogues are anonymized.
