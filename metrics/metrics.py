@@ -46,8 +46,9 @@ def calculate_metrics(csv_path: str):
     print(f"\nMetric extraction complete.")
 
 if __name__ == "__main__":
+    from pathlib import Path
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", default="../simulator/demo_simulation_results.csv", help="Path to simulated log output")
+    parser.add_argument("--input", default=str(Path(__file__).parent.parent / "simulator" / "demo_simulation_results.csv"), help="Path to simulated log output")
     args = parser.parse_args()
     
     calculate_metrics(args.input)

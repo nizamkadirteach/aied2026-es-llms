@@ -77,7 +77,7 @@ def run_simulation(cluster_name: str, n_sessions: int):
     return results
 
 if __name__ == "__main__":
-    out_file = Path("demo_simulation_results.csv")
+    out_file = Path(__file__).parent / "demo_simulation_results.csv"
     all_results = []
     
     for cluster in CLUSTERS.keys():
