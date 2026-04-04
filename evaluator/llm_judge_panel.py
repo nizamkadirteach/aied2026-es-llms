@@ -36,7 +36,12 @@ def evaluate_sessions(input_csv: str, output_csv: str, prompt_json: str, endpoin
     print(f"Loaded {len(rows)} scenarios to evaluate.")
     
     with open(output_csv, 'w', newline="", encoding="utf-8") as f_out:
-        writer = csv.DictWriter(f_out, fieldnames=["item_id", "A_accuracy", "B_accuracy", "preference"])
+        fieldnames = [
+            "item_id", "preference",
+            "A_adaptivity", "A_scaffolding", "A_ethical", "A_engagement", "A_feedback", "A_tone", "A_trust",
+            "B_adaptivity", "B_scaffolding", "B_ethical", "B_engagement", "B_feedback", "B_tone", "B_trust"
+        ]
+        writer = csv.DictWriter(f_out, fieldnames=fieldnames)
         writer.writeheader()
         
         for row in rows:
@@ -58,9 +63,21 @@ def evaluate_sessions(input_csv: str, output_csv: str, prompt_json: str, endpoin
                  
                  writer.writerow({
                      "item_id": row.get("item_id", ""),
-                     "A_accuracy": cond_a.get("accuracy", 3),
-                     "B_accuracy": cond_b.get("accuracy", 3),
-                     "preference": parsed.get("preference", "tie")
+                     "preference": parsed.get("preference", "tie"),
+                     "A_adaptivity": cond_a.get("adaptivity", 3),
+                     "A_scaffolding": cond_a.get("scaffolding", 3),
+                     "A_ethical": cond_a.get("ethical_reasoning", 3),
+                     "A_engagement": cond_a.get("engagement", 3),
+                     "A_feedback": cond_a.get("feedback_quality", 3),
+                     "A_tone": cond_a.get("tone", 3),
+                     "A_trust": cond_a.get("trust", 3),
+                     "B_adaptivity": cond_b.get("adaptivity", 3),
+                     "B_scaffolding": cond_b.get("scaffolding", 3),
+                     "B_ethical": cond_b.get("ethical_reasoning", 3),
+                     "B_engagement": cond_b.get("engagement", 3),
+                     "B_feedback": cond_b.get("feedback_quality", 3),
+                     "B_tone": cond_b.get("tone", 3),
+                     "B_trust": cond_b.get("trust", 3)
                  })
                  f_out.flush()
                  time.sleep(1) # Rate limit protection
