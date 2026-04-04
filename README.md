@@ -21,7 +21,11 @@ This repository is designed to help learning science researchers evaluate, simul
    - The strict **Multi-LLM Evaluator**. Use `eval_rubric_prompts.json` and `llm_judge_panel.py` to leverage 6 frontier models (Gemini, Qwen, Kimi, etc.) to automatically grade your own dialogue logs on our 7-dimensional pedagogy rubric.
 4. **`/metrics`**: 
    - `metrics.py` calculates novel conceptual metrics from our paper, notably **Hint Efficiency** ($\text{Mastery Gain} / \text{Hints Received}$) and **Procedural Fairness** (Constraint Adherence).
-5. **`/agents`**:
+5. **`/evaluation`**:
+   - Contains the **Human Expert Evaluation Rubrics** (`HUMAN_EVALUATION_RUBRICS.md`). This formal 7-dimension Likert scale was exactly as presented to our 6 human expert judges to evaluate Adaptivity, Scaffolding, Ethical Reasoning, and Trust.
+6. **`/examples`**:
+   - Contains anonymized transparency datasets (e.g. human expert panel evaluation scores and unedited high-throughput N=2,400 Monte Carlo simulation results) directly mapping to the paper's quantitative results.
+7. **`/agents`**:
    - The core Subsumption Architecture logic. Review `orchestrator.py` to see the hierarchical arbitration engine (Safety > Assessment > Feedback > Scaffolding > Motivation) and `stateless_renderer.py` for the final single-prompt linguistic generation step.
 
 ## 🚀 Quick Start (Google Colab)
