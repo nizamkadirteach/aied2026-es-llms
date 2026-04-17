@@ -5,7 +5,7 @@
 
 **Official Open-Source Toolkit & Reproducibility Repository for the AIED 2026 Paper (ES-LLMs)**
 
-This repository provides an extensible research toolkit outlining the **Ensemble of Specialized LLMs (ES-LLMs)** architecture. By decoupling deterministic pedagogical decision-making from natural language generation, ES-LLMs enforces strict "attempt-before-hint" rules, solving the Mastery Gain Paradox common to monolithic AI tutors.
+This repository provides an extensible research toolkit outlining the **Ensemble of Specialized LLMs (ES-LLMs)** architecture. By decoupling deterministic pedagogical decision-making from natural language generation, ES-LLMs enforces strict "attempt-before-hint" rules, solving the Mastery Gain Paradox common to monolithic AI tutors. A live, interactive web demonstration of the ES-LLMs tutoring sandbox is also available!
 
 ---
 
@@ -30,6 +30,14 @@ This repository is designed to help learning science researchers evaluate, simul
 
 ## 🚀 Quick Start (Google Colab)
 Want to instantly see how the Subsumption Architecture suppresses harmful AI generations? Click the **Open in Colab** badge at the top of this file to run a minimal, executable demonstration of our EthicsBot overriding a premature hint request directly in your browser.
+
+## 🌐 Public Sandbox (Live Demo)
+
+Experience the Ensemble of Specialized LLMs (ES-LLMs) architecture in action through our public interactive sandbox. 
+
+[![ES-LLMs Public Sandbox](assets/sandbox-screenshot.png)](https://learnadaptresearch.org/aied2026)
+
+**[Try the Live ES-LLMs Sandbox Here](https://learnadaptresearch.org/aied2026)**
 
 ## 👥 Author & Citation
 
